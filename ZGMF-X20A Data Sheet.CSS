@@ -1,0 +1,406 @@
+body {
+    background-image: url(https://wallpapercave.com/wp/wp3613737.jpg);
+    padding-left: 40px;
+}
+
+header{
+    background-color: rgb(15, 73, 188);
+    width: 800px;
+    top: 0;
+    color: lightgray;
+    padding-left: 10px;
+    padding-bottom: 2px;
+    font-family: 'Black Ops One';
+    text-decoration: underline;
+    text-decoration-style: double;
+    text-decoration-color: lightgray;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 15px 30px 0 rgba(0, 0, 0, 0.678);
+    animation: expand;
+    animation-duration: 3s;
+}
+
+@keyframes expand {
+    from {
+        width: 0;
+    }
+    to {
+        width: 800px;
+    }
+}
+
+#main-head {
+    font-size: 40px;
+    animation: text-expand;
+    animation-duration: 3s;
+}
+
+@keyframes text-expand {
+    from {
+        font-size: 0px;
+    }
+    to {
+        font-size: 40px;
+    }
+}
+
+#main-subhead {
+    font-size: 30px;
+    animation: text-expand2;
+    animation-duration: 3s;
+}
+
+@keyframes text-expand2 {
+    from {
+        font-size: 0px;
+    }
+    to {
+        font-size: 30px;
+    }
+}
+
+#content {
+    display: flex;
+    align-items: flex-start;
+    Width: 100%;
+
+}
+
+.data {
+    width: 50%;
+    margin-top: 60px;
+    color:lightgray;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+    animation: expand2;
+    animation-duration: 3s;
+}
+
+@keyframes expand2 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 50%;
+    }
+}
+
+.overview {
+    background-color: rgb(15, 73, 188);
+    margin-bottom: 30px;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 15px 30px 0 rgba(0, 0, 0, 0.678);
+}
+
+.armaments {
+    background-color: rgb(15, 73, 188);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 15px 30px 0 rgba(0, 0, 0, 0.678);
+}
+
+.equipmentfeatures {
+    background-color: rgb(15, 73, 188);
+    margin-top: 30px;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 15px 30px 0 rgba(0, 0, 0, 0.678);
+}
+
+.info-text {
+    color: lightgray;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+    font-size: 16px;
+    animation: text-expand3;
+    animation-duration: 3s;
+}
+
+@keyframes text-expand3 {
+    from {
+        font-size: 0px;
+    }
+    to {
+        font-size: 16px;
+    }
+}
+
+.sectionheader {
+    padding-left: 10px;
+    font-family: 'Black Ops One';
+    font-size: 25px;
+    animation: text-expand4;
+    animation-duration: 3s;
+}
+
+@keyframes text-expand4 {
+    from {
+        font-size: 0px;
+    }
+    to {
+        font-size: 25px;
+    }
+}
+
+.list-header {
+    font-family: 'Black Ops One';
+    font-size: 20px;
+    animation: text-expand5;
+    animation-duration: 3s;
+}
+
+@keyframes text-expand5 {
+    from {
+        font-size: 0px;
+    }
+    to {
+        font-size: 20px;
+    }
+}
+
+.images {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    animation: image-slide-in;
+    animation-duration: 3s;
+}
+
+@keyframes image-slide-in {
+    from {margin-left: 100%}
+    to {margin-left: 0%}
+}
+
+#sf-main {
+    margin: 10px;
+    max-width: 500px;
+    max-height: 400px;
+    margin-bottom: 60px;
+    margin-top: 40px;
+    box-shadow: 5px 5px 5px 5px rgb(106, 220, 255);
+    animation: sf-thrusters;
+    animation-duration: 0.33s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes sf-thrusters {
+ 0%     {box-shadow: 5px 5px 5px 5px rgb(106, 220, 255);}
+ 25%    {box-shadow: 7.5px 7.5px 7.5px 7.5px rgb(106, 220, 255);}
+ 50%    {box-shadow: 10px 10px 10px 10px rgb(106, 220, 255);}
+ 75%    {box-shadow: 7.5px 7.5px 7.5px 7.5px rgb(106, 220, 255);}
+ 100%   {box-shadow: 5px 5px 5px 5px rgb(106, 220, 255);}
+}
+
+#CIWS {
+    margin-bottom: 20px;
+    max-width: 265px;
+    transition: transform 1.5s
+}
+
+#CIWS:hover {
+    transform: scale(2, 2);
+    border: solid black 1px;
+}
+
+#beamshield {
+    margin-bottom: 20px;
+    transition: transform 1.5s;
+}
+
+#beamshield:hover {
+    transform: scale(2, 2);
+    border: solid black 1px;
+}
+
+#beamrifle {
+    margin-bottom: 20px;
+    max-width: 265px;
+    transition: transform 1.5s;
+}
+
+#beamrifle:hover {
+    transform: scale(2, 2);
+    border: solid black 1px;
+}
+
+#DRAGOON {
+    max-width: 265px;
+    margin-bottom: 100px;
+    transition: transform 1.5s;
+}
+
+#DRAGOON:hover {
+    transform: scale(2.5, 2.5);
+    border: solid black 1px;
+}
+
+#multi-lock {
+    max-width: 350px;
+    margin-top: 50px;
+    margin-bottom: 75px;
+    transition: transform 1.5s;
+}
+
+#himat {
+    max-width: 350px;
+    margin-bottom: 75px;
+    transition: transform 1.5s;
+}
+
+#meteor {
+    max-width: 350px;
+    transition: transform 1.5s;
+}
+
+#multi-lock:hover {
+    transform: scale(2, 2);
+}
+
+#himat:hover {
+    transform: scale(2, 2);
+}
+
+#meteor:hover {
+    transform: scale(2, 2);
+}
+
+#clynecorp {
+    margin-top: 200px;
+    border-radius: 50px;
+    border: solid black 2px;
+    animation: spin;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+ 0%     {transform: rotateY(0deg)}
+ 50%    {transform: rotateY(150deg)}
+ 100%   {transform: rotateY(0deg)}
+}
+
+#clyne {
+    font-family: 'Black Ops One';
+    font-size: 15px;
+    margin-top: 15px;
+    text-align: center;
+    color: lightgray;
+    text-decoration: underline;
+    text-decoration-color: lightgray;
+}
+
+.contact-form {
+    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    background-color: rgb(15, 73, 188);
+    color: lightgray;
+    margin-top: 30px;
+    padding-left: 10px;
+    border: double rgb(2, 39, 112) 4px;
+    width: 715px;
+    border-radius: 5px;
+    animation: expand3;
+    animation-duration: 3s;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 15px 30px 0 rgba(0, 0, 0, 0.678);
+}
+
+@keyframes expand3 {
+    from {
+        width: 0px;
+    }
+    to {width: 715px;
+    }
+}
+
+#submit {
+    background: rgb(114, 173, 250);
+    margin: 10px;
+    width: 100px;
+    color: black;
+    box-shadow: 0 5px rgba(0, 0, 0, 0.63);
+}
+
+#submit:hover {
+    background: rgb(0, 46, 106);
+}
+
+#submit:active {
+    background: rgb(0, 46, 106);
+    box-shadow: 0 2px rgba(0, 0, 0, 0.63);
+    transform: translateY(4px);
+}
+
+@keyframes submit {
+    from {
+        width: 0px;
+    }
+    to {
+        width: 100px;
+    }
+
+}
+
+.form-inputs {
+    margin-left: 10px;
+    padding: 5px;
+    animation: expand2;
+    animation-duration: 3s;
+}
+
+.radio-inputs {
+    margin-left: 10px;
+}
+
+textarea {
+    margin: 10px;
+    padding: 5px;
+    height: 100px;
+    width: 400px;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(114, 173, 250);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(15, 73, 188);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(2, 39, 112);
+}
+
+.youtube {
+    color: lightgray;
+    font-size: 20px;
+    background-color:rgb(15, 73, 188);
+    width: 725px;
+    text-align: center;
+    border: double rgb(2, 39, 112) 4px;
+    margin-top: 30px;
+    border-radius: 5px;
+    animation: expand4;
+    animation-duration: 3s;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 15px 30px 0 rgba(0, 0, 0, 0.678);
+}
+
+@keyframes expand4 {
+    from {
+        width: 0px;
+    }
+    to {width: 725px;
+    }
+}
+
+a {
+    color: lightgray;
+}
+
+a:hover {
+    color: red;
+}
